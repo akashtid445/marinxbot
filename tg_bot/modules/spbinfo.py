@@ -18,7 +18,7 @@ def lookup(update, context):
     response = a.get('success')
     if response is True:
         date = a.get("results").get("last_updated")
-        stats = '**◢ Intellivoid• SpamProtection Info**:\n'
+        stats = '**◢ Legion• SpamProtection Info**:\n'
         stats += f' • **Updated on**: `{datetime.datetime.fromtimestamp(date).strftime("%Y-%m-%d %I:%M:%S %p")}`\n'
         stats += (
             f" • **Chat Info**: [Link](t.me/SpamProtectionBot/?start=00_{user_id})\n"
