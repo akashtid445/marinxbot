@@ -31,14 +31,14 @@ fileConfig('logging.ini')
 #print(flag)
 log = logging.getLogger('[Enterprise]')
 logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
-log.info("[KIGYO] Kigyo is starting. | An Eagle Union Project. | Licensed under GPLv3.")
+log.info("[KIGYO] Marin is starting. | An anime themed group managemet bot. | Licensed under GPLv3.")
 log.info("[KIGYO] Not affiliated to Azur Lane or Yostar in any way whatsoever.")
-log.info("[KIGYO] Project maintained by: github.com/Dank-del (t.me/dank_as_fuck)")
+log.info("[KIGYO] bot maintained by: github.com/kajukatlii (t.me/sinixious)")
 
 # if version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 7:
     log.error(
-        "[KIGYO] You MUST have a python version of at least 3.7! Multiple features depend on this. Bot quitting."
+        "[MARIN] You MUST have a python version of at least 3.7! Multiple features depend on this. Bot quitting."
     )
     quit(1)
 
