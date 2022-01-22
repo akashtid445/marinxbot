@@ -202,6 +202,7 @@ from tg_bot.modules.language import gs
 def get_help(chat):
     return gs(chat, "userinfo_help")
 
+@kigcmd(command='stats')
 def stats(update: Update, context: CallbackContext):
     stats = "<b><b>▬▬▬「    ᴍᴀʀɪɴᴏ ꜱᴛᴀᴛꜱ    」▬▬▬</b></b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
