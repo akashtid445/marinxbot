@@ -28,7 +28,7 @@ pm_start_text: |
 grp_start_text: "Hi, I'm Kigyo."
 
 pm_help_text: |
-   Hello there! My name is *Kigyo*. A part of *Eagle Union*.
+   Hello there! My name is *Marin*. A part of *Akatsuki community*.
    I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of
    the things I can help you with.
    *Main* commands available:
@@ -462,7 +462,7 @@ nation_help: |
       - /sardegnas - Lists all Sardegnas Nations.
       - /neptunians - Lists all Neptunia Nations.
       Note: These commands list users with special bot priveleges and can only be used by them.
-      You can visit @YorktownEagleUnion to query more about these.
+      You can visit @marinxsupport to query more about these.
 
 nlp_help: |
 
