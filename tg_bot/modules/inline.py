@@ -51,7 +51,7 @@ def inlinequery(update: Update, _) -> None:
             "keyboard": ".spb ",
         },
         {
-            "title": "Account info on Kigyo",
+            "title": "Account info on Marin",
             "description": "Look up a Telegram account in Marin database",
             "message_text": "Click the button below to look up a person in Marin database using their Telegram ID",
             "thumb_urL": "https://telegra.ph/file/c34780cea5ee4b1764a8f.jpg",
@@ -59,7 +59,7 @@ def inlinequery(update: Update, _) -> None:
         },
         {
             "title": "About",
-            "description": "Know about Kigyo",
+            "description": "Know about Marin",
             "message_text": "Click the button below to get to know about Kigyo.",
             "thumb_urL": "https://telegra.ph/file/c34780cea5ee4b1764a8f.jpg",
             "keyboard": ".about ",
@@ -148,7 +148,7 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
         text += f"\n\nThis person is my owner"
         nation_level_present = True
     elif user.id in DEV_USERS:
-        text += f"\n\nThis Person is a part of Eagle Union"
+        text += f"\n\nThis Person is a part of Marin Union"
         nation_level_present = True
     elif user.id in SUDO_USERS:
         text += f"\n\nThe Nation level of this person is Royal"
@@ -157,10 +157,10 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
         text += f"\n\nThe Nation level of this person is Sakura"
         nation_level_present = True
     elif user.id in SARDEGNA_USERS:
-        text += f"\n\nThe Nation level of this person is Sardegna"
+        text += f"\n\nThe Nation level of this person is Veteran"
         nation_level_present = True
     elif user.id in WHITELIST_USERS:
-        text += f"\n\nThe Nation level of this person is Neptunia"
+        text += f"\n\nThe Nation level of this person is Armature"
         nation_level_present = True
 
     if nation_level_present:
@@ -188,7 +188,7 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text="Report Error",
-                    url=f"https://t.me/YorktownEagleUnion",
+                    url=f"https://t.me/MarinXSupport",
                 ),
                 InlineKeyboardButton(
                     text="Search again",
@@ -220,7 +220,7 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
     sql.update_user(user.id, user.username)
     about_text = f"""
     Kigyo (@{context.bot.username})
-    Maintained by [Dank-del](t.me/dank_as_fuck)
+    Maintained by [Sinixious](t.me/sinixious)
     Built with ❤️ using python-telegram-bot v{str(__version__)}
     Running on Python {python_version()}
     """
@@ -230,11 +230,11 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text="Support",
-                    url=f"https://t.me/YorktownEagleUnion",
+                    url=f"https://t.me/MarinXSupport",
                 ),
                 InlineKeyboardButton(
                     text="Channel",
-                    url=f"https://t.me/KigyoUpdates",
+                    url=f"https://t.me/MarinxUpdates",
                 ),
                 InlineKeyboardButton(
                     text='Ping',
@@ -244,8 +244,8 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
             ],
             [
                 InlineKeyboardButton(
-                    text="GitLab",
-                    url=f"https://www.gitlab.com/Dank-del/EnterpriseALRobot",
+                    text="Support",
+                    url=f"https://t.me/MarinXSupport",
                 ),
                 InlineKeyboardButton(
                     text="GitHub",
@@ -326,7 +326,7 @@ def spb(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text="Report Error",
-                    url=f"https://t.me/YorktownEagleUnion",
+                    url=f"https://t.me/MarinXSupport",
                 ),
                 InlineKeyboardButton(
                     text="Search again",
@@ -470,7 +470,7 @@ def media_query(query: str, update: Update, context: CallbackContext) -> None:
                 [
                     InlineKeyboardButton(
                         text="Report error",
-                        url="t.me/YorktownEagleUnion",
+                        url="t.me/MarinXSupport",
                     ),
                     InlineKeyboardButton(
                         text="Search again",
