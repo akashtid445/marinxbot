@@ -8,7 +8,6 @@ import tg_bot.modules.sql.userinfo_sql as sql
 from tg_bot import SUDO_USERS, DEV_USERS
 from tg_bot.modules.helper_funcs.decorators import kigcmd
 from tg_bot.modules.helper_funcs.extraction import extract_user
-from tg_bot.__main__ import STATS
 
 @kigcmd(command='me', pass_args=True)
 def about_me(update: Update, context: CallbackContext):
@@ -201,16 +200,6 @@ from tg_bot.modules.language import gs
 
 def get_help(chat):
     return gs(chat, "userinfo_help")
-
-@kigcmd(command='stats')
-def stats(update: Update, context: CallbackContext):
-    stats = "<b><b>▬▬▬「    ᴍᴀʀɪɴᴏ ꜱᴛᴀᴛꜱ    」▬▬▬</b></b>\n" + "\n".join([mod.__stats__() for mod in STATS])
-    result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
-    result += "\n<b><b>▬▬▬「    ᴍᴀʀɪɴᴏ ꜱᴛᴀᴛꜱ    」▬▬▬</b></b>"
-    update.effective_message.reply_video(
-        caption=result,
-        parse_mode=ParseMode.HTML, 
-   )
 
 
 __mod_name__ = "Bios/Abouts"
