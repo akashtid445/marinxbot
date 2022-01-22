@@ -186,7 +186,7 @@ def info(update: Update, context: CallbackContext):  # sourcery no-metrics
         text += '\nThis person is my owner'
         Nation_level_present = True
     elif user.id in DEV_USERS:
-        text += '\nThis Person is a part of Eagle Union'
+        text += '\nThis Person is a part of Akatsuki Union'
         Nation_level_present = True
     elif user.id in SUDO_USERS:
         text += '\nThe Nation level of this person is Royal'
@@ -195,10 +195,10 @@ def info(update: Update, context: CallbackContext):  # sourcery no-metrics
         text += '\nThe Nation level of this person is Sakura'
         Nation_level_present = True
     elif user.id in SARDEGNA_USERS:
-        text += '\nThe Nation level of this person is Sardegna'
+        text += '\nThe Nation level of this person is Veteran'
         Nation_level_present = True
     elif user.id in WHITELIST_USERS:
-        text += '\nThe Nation level of this person is Neptunia'
+        text += '\nThe Nation level of this person is Armature'
         Nation_level_present = True
 
     if Nation_level_present:
@@ -335,8 +335,8 @@ def stats(update, context):
         update.effective_message.reply_text(status +
             "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS]) +
-            "\n\n[⍙ GitHub](https://github.com/Dank-del/EnterpriseALRobot) | [⍚ GitLab](https://gitlab.com/Dank-del/EnterpriseALRobot)\n\n" +
-            "╘══「 by [Dank-del](github.com/Dank-del) 」\n",
+            "\n\n[⍙ GitHub](https://github.com/kajukatliii) | [⍚ Support](https://t.me/MarinXSupport)\n\n" +
+            "╘══「 by [Sinixious](github.com/kajukatliii) 」\n",
         parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(kb), disable_web_page_preview=True)
     except BaseException:
         update.effective_message.reply_text(
@@ -346,9 +346,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + "\n\n⍙ [GitHub](https://github.com/Dank-del/EnterpriseALRobot) | ⍚ [GitLab](https://gitlab.com/Dank-del/EnterpriseALRobot)\n\n"
+                    + "\n\n⍙ [GitHub](https://github.com/kajukatliii) | ⍚ [Support](https://t.me/MarinXSupport)\n\n"
                 )
-                + "╘══「 by [Dank-del](github.com/Dank-del) 」\n"
+                + "╘══「 by [Sinixious](github.com/kajukatliii) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(kb),
