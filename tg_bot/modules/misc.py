@@ -335,8 +335,8 @@ def stats(update, context):
         update.effective_message.reply_text(status +
             "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS]) +
-            "\n\n[⍙ GitHub](https://github.com/kajukatliii) | [⍚ Support](https://t.me/MarinXSupport)\n\n" +
-            "╘══「 by [Sinixious](github.com/kajukatliii) 」\n",
+            "\n\n[⍙ GitHub](https://github.com/kajukatliii/marinxbot) | [⍚ Support](https://t.me/MarinXSupport)\n\n" +
+            "╘══「 by [Sinixious](github.com/kajukatliii/) 」\n",
         parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(kb), disable_web_page_preview=True)
     except BaseException:
         update.effective_message.reply_text(
@@ -346,7 +346,7 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + "\n\n⍙ [GitHub](https://github.com/kajukatliii) | ⍚ [Support](https://t.me/MarinXSupport)\n\n"
+                    + "\n\n⍙ [GitHub](https://github.com/kajukatliii/marinxbot) | ⍚ [Support](https://t.me/MarinXSupport)\n\n"
                 )
                 + "╘══「 by [Sinixious](github.com/kajukatliii) 」\n"
             ),
