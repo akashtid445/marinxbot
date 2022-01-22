@@ -44,31 +44,31 @@ def inlinequery(update: Update, _) -> None:
     inline_help_dicts = [
         {
             "title": "SpamProtection INFO",
-            "description": "Look up a person/bot/channel/chat on @Intellivoid SpamProtection API",
-            "message_text": "Click the button below to look up a person/bot/channel/chat on @Intellivoid SpamProtection API using "
+            "description": "Look up a person/bot/channel/chat",
+            "message_text": "Click the button below to look up a person/bot/channel/chat on SpamProtection API using "
                             "username or telegram id",
             "thumb_urL": "https://telegra.ph/file/3ce9045b1c7faf7123c67.jpg",
             "keyboard": ".spb ",
         },
         {
             "title": "Account info on Kigyo",
-            "description": "Look up a Telegram account in Kigyo database",
-            "message_text": "Click the button below to look up a person in Kigyo database using their Telegram ID",
-            "thumb_urL": "https://telegra.ph/file/c85e07b58f5b3158b529a.jpg",
+            "description": "Look up a Telegram account in Marin database",
+            "message_text": "Click the button below to look up a person in Marin database using their Telegram ID",
+            "thumb_urL": "https://telegra.ph/file/c34780cea5ee4b1764a8f.jpg",
             "keyboard": ".info ",
         },
         {
             "title": "About",
             "description": "Know about Kigyo",
             "message_text": "Click the button below to get to know about Kigyo.",
-            "thumb_urL": "https://telegra.ph/file/c85e07b58f5b3158b529a.jpg",
+            "thumb_urL": "https://telegra.ph/file/c34780cea5ee4b1764a8f.jpg",
             "keyboard": ".about ",
         },
         {
             "title": "Anilist",
             "description": "Search anime and manga on AniList.co",
             "message_text": "Click the button below to search anime and manga on AniList.co",
-            "thumb_urL": "https://telegra.ph/file/c85e07b58f5b3158b529a.jpg",
+            "thumb_urL": "https://telegra.ph/file/c34780cea5ee4b1764a8f.jpg",
             "keyboard": ".anilist ",
         },
     ]
