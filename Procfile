@@ -1,1 +1,1 @@
-python3.9 -m tg_bot
+python3.8.5 -m tg_bot
