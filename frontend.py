@@ -9,14 +9,14 @@ except ImportError:
     pver = "N/A"
 
 with window("About"):
-    add_text("Kigyo telegram bot")
-    add_text("Maintained with <3 by Dank-del (github.com/Dank-del)")
+    add_text("Marin telegram bot")
+    add_text("Maintained with <3 by Sinixious (github.com/kajukatliii)")
     add_text("Enviroment:")
     add_text(f"Bot lib: python-telegram-bot v{pver}.", bullet=True)
     add_text(f"Python version: {python_version()}.", bullet=True)
-    add_text("Source:")
-    add_text("GitHub: github.com/Dank-del/EnterpriseALRobot", bullet=True)
-    add_text("GitLab: gitlab.com/Dank-del/EnterpriseALRobot", bullet=True)
+    add_text("Support:")
+    add_text("Telegram: t.me/MarinXSupport", bullet=True)
+    add_text("Github: github.com/kajukatliii", bullet=True)
 
 with window("stats"):
     add_text("\n*Bot statistics*:\n"+ "\n".join([mod.__stats__() for mod in STATS]))
