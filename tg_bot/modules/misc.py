@@ -328,7 +328,7 @@ def stats(update, context):
            InlineKeyboardButton('Ping', callback_data='pingCB')
           ]
     ]
-    repo = git.Repo(search_parent_directories=True)
+    repo = git.Repo(search_parent_directories=False)
     sha = repo.head.object.hexsha
     status += f"*• Commit*: `{sha[0:9]}`\n"
     try:
