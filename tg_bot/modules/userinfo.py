@@ -202,5 +202,14 @@ from tg_bot.modules.language import gs
 def get_help(chat):
     return gs(chat, "userinfo_help")
 
+def stats(update: Update, context: CallbackContext):
+    stats = "<b><b>▬▬▬「    ᴍᴀʀɪɴᴏ ꜱᴛᴀᴛꜱ    」▬▬▬</b></b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
+    result += "\n<b><b>▬▬▬「    ᴍᴀʀɪɴᴏ ꜱᴛᴀᴛꜱ    」▬▬▬</b></b>"
+    update.effective_message.reply_video(
+        caption=result,
+        parse_mode=ParseMode.HTML, 
+   )
+
 
 __mod_name__ = "Bios/Abouts"
