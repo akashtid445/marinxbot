@@ -68,9 +68,6 @@ RUN pip3 install --upgrade pip setuptools
 RUN git clone https://github.com/Kajukatliii/marinxbot 
 WORKDIR /root/marinxbot
 
-#Copy config file to /root/marinxbot/marinxbot
-COPY ./marinxbot/sample_config.py ./marinxbot/config.py* /root/marinxbot/marinxbot/
-
 ENV PATH="/home/bot/bin:$PATH"
 
 # Install requirements
