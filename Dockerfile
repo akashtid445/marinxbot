@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/marinxbot
-RUN git clone -b shiken https://github.com/Kajukatliii/marinxbot /root/marinxbot
+RUN git clone https://github.com/Kajukatliii/marinxbot 
 WORKDIR /root/marinxbot
 
 #Copy config file to /root/marinxbot/marinxbot
