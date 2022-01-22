@@ -222,7 +222,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/marinexUpdates",
+                                url="https://t.me/marinxUpdates",
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "src_btn"),
